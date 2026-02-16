@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomie - Politique de confidentialite</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', -apple-system, sans-serif;
+      background: #fff5f7;
+      color: #4a2c3d;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    .page-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4a2c3d;
+      margin-bottom: 4px;
+    }
+
+    header .subtitle {
+      font-size: 16px;
+      color: #8a6478;
+      font-weight: 500;
+    }
+
+    .update-date {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 16px;
+      background: #ffe8ed;
+      color: #8a6478;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(255, 143, 171, 0.12);
+      border: 1px solid #ffd0dc;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #4a2c3d;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #4a2c3d;
+      margin-bottom: 12px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    .card ul li {
+      font-size: 14px;
+      color: #4a2c3d;
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: '🌿';
+      position: absolute;
+      left: 0;
+      font-size: 12px;
+    }
+
+    .highlight-box {
+      background: #fff5f7;
+      border-left: 3px solid #ff8fab;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #4a2c3d;
+    }
+
+    .permissions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    @media (max-width: 520px) {
+      .permissions-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .permission-item {
+      background: #fff5f7;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+
+    .permission-item strong {
+      display: block;
+      font-weight: 700;
+      color: #4a2c3d;
+      margin-bottom: 2px;
+      font-size: 13px;
+    }
+
+    .permission-item span {
+      color: #8a6478;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ffd0dc;
+      color: #c4a0b3;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #ff8fab;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: #e8729a;
+      text-decoration: underline;
+    }
+
+    a {
+      color: #ff8fab;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: #e8729a;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="logo">🌸</div>
+      <h1>Bloomie</h1>
+      <p class="subtitle">Politique de confidentialité</p>
+      <span class="update-date">Dernière mise a jour : 16 février 2026</span>
+    </header>
+
+    <!-- Introduction -->
+    <div class="card">
+      <h2><span class="icon">👋</span> Introduction</h2>
+      <p>
+        Bloomie est une extension Chrome qui vous aide à organiser vos tâches quotidiennes
+        sous forme de to-do list gamifiée, avec un système de jardin virtuel et de blocage de sites
+        pour vous aider à rester concentré.
+      </p>
+      <p>
+        Votre vie privée est importante. Cette politique explique de manière simple et transparente
+        comment Bloomie gere vos données.
+      </p>
+      <div class="highlight-box">
+        En resumé : toutes vos données restent sur votre appareil. Rien n'est envoyé à un serveur externe.
+      </div>
+    </div>
+
+    <!-- Donnees collectees -->
+    <div class="card">
+      <h2><span class="icon">📦</span> Données stockées localement</h2>
+      <p>
+        Bloomie stocke les informations suivantes uniquement sur votre navigateur
+        via <code>chrome.storage.local</code> :
+      </p>
+      <ul>
+        <li>Vos tâches (texte, type, statut de completion)</li>
+        <li>La liste des sites bloqués que vous configurez</li>
+        <li>Les données de votre jardin et de vos fleurs (progression)</li>
+        <li>Vos preférences (thème de couleur, streak, paramètres)</li>
+      </ul>
+      <div class="highlight-box">
+        Aucune de ces données ne quitte votre navigateur. Il n'y a aucun serveur, aucune base de données externe,
+        aucun service cloud.
+      </div>
+    </div>
+
+    <!-- Ce que Bloomie ne fait PAS -->
+    <div class="card">
+      <h2><span class="icon">🚫</span> Ce que Bloomie ne fait pas</h2>
+      <p>Bloomie ne fait aucune des choses suivantes :</p>
+      <ul>
+        <li>Collecter ou transmettre des données personnelles</li>
+        <li>Envoyer des informations à des serveurs externes</li>
+        <li>Utiliser des outils d'analyse ou de suivi (analytics, tracking)</li>
+        <li>Intégrer des services tiers (publicités, pixels, SDK)</li>
+        <li>Acceder à votre historique de navigation</li>
+        <li>Lire le contenu des pages web que vous visitez</li>
+      </ul>
+    </div>
+
+    <!-- Permissions -->
+    <div class="card">
+      <h2><span class="icon">🔑</span> Permissions utilisées</h2>
+      <p>
+        Voici les permissions demandées par Bloomie et leur justification :
+      </p>
+      <div class="permissions-grid">
+        <div class="permission-item">
+          <strong>storage</strong>
+          <span>Sauvegarder vos tâches, votre jardin et vos préférences localement.</span>
+        </div>
+        <div class="permission-item">
+          <strong>alarms</strong>
+          <span>Gérer les rappels quotidiens et le report automatique des tâches.</span>
+        </div>
+        <div class="permission-item">
+          <strong>declarativeNetRequest</strong>
+          <span>Bloquer l'accès aux sites que vous avez choisi de bloquer.</span>
+        </div>
+        <div class="permission-item">
+          <strong>declarativeNetRequestFeedback</strong>
+          <span>Verifier que les règles de blocage fonctionnent correctement.</span>
+        </div>
+        <div class="permission-item">
+          <strong>host_permissions (all_urls)</strong>
+          <span>Nécessaire pour que le blocage de sites puisse s'appliquer à n'importe quel domaine.</span>
+        </div>
+      </div>
+      <p>
+        Ces permissions sont utilisées uniquement pour les fonctionnalités décrites ci-dessus.
+        Aucune permission n'est utilisée pour collecter des données.
+      </p>
+    </div>
+
+    <!-- Partage de donnees -->
+    <div class="card">
+      <h2><span class="icon">🔒</span> Partage de données</h2>
+      <p>
+        Vos données ne sont partagées avec personne. Puisque aucune donnée ne quitte votre appareil,
+        il n'y a aucun tiers, aucun partenaire, aucun annonceur qui y a accès.
+      </p>
+    </div>
+
+    <!-- Suppression -->
+    <div class="card">
+      <h2><span class="icon">🗑️</span> Suppression de vos données</h2>
+      <p>
+        Vous pouvez supprimer toutes vos données à tout moment en :
+      </p>
+      <ul>
+        <li>Désinstallant l'extension Bloomie depuis votre navigateur</li>
+        <li>Utilisant la fonction de réinitialisation dans les options de l'extension</li>
+        <li>Effacant les données de l'extension dans les paramètres Chrome
+          (<em>chrome://extensions</em> &rarr; Bloomie &rarr; Effacer les données)</li>
+      </ul>
+    </div>
+
+    <!-- Modifications -->
+    <div class="card">
+      <h2><span class="icon">📝</span> Modifications de cette politique</h2>
+      <p>
+        Si cette politique de confidentialité est modifiée, la date de mise à jour en haut de cette page
+        sera actualisée. L'extension Bloomie étant entierement locale, toute modification future
+        maintiendra ce meme engagement de respect de votre vie privée.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2><span class="icon">💬</span> Contact</h2>
+      <p>
+        Pour toute question concernant cette politique de confidentialité ou l'extension Bloomie,
+        vous pouvez nous contacter via la page de support du Chrome Web Store ou ouvrir un ticket
+        sur le dépot du projet.
+      </p>
+    </div>
+
+    <footer>
+      <p>🌸 Bloomie &mdash; Terminez vos tâches, faites pousser votre jardin, restez focus.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
