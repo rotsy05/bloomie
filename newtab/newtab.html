@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/flowers.css">
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <div class="newtab-container">
+    <!-- Header -->
+    <header class="newtab-header animate-fade-in">
+      <div class="header-left">
+        <span class="logo-icon">🌸</span>
+        <h1>Bloomie</h1>
+      </div>
+      <div class="header-right">
+        <div class="streak-badge" id="streakBadge" title="Jours consecutifs">
+          <span class="streak-icon">🔥</span>
+          <span class="streak-count" id="streakCount">0</span>
+        </div>
+        <button class="btn btn-secondary btn-small" id="openOptions">⚙️</button>
+      </div>
+    </header>
+
+    <div class="newtab-content">
+      <!-- Garden Section -->
+      <section class="garden-section card animate-slide-up">
+        <h2 class="section-title">Mon Jardin de la Semaine</h2>
+        <div class="garden-view" id="gardenView"></div>
+        <div class="garden-days" id="gardenDays"></div>
+      </section>
+
+      <!-- Main area: tasks + status -->
+      <div class="main-area">
+        <!-- Tasks Section -->
+        <section class="tasks-section card animate-slide-up" style="animation-delay: 0.1s">
+          <div class="section-header">
+            <h2 class="section-title">Tâches du Jour</h2>
+            <span class="task-counter" id="taskCounter">0/0</span>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+
+          <!-- Add task -->
+          <form class="add-task-form" id="addTaskForm">
+            <div class="task-type-toggle" id="taskTypeToggle">
+              <button type="button" class="type-btn active" data-type="light">🌿 Legere</button>
+              <button type="button" class="type-btn" data-type="essential">🌸 Essentielle</button>
+            </div>
+            <div class="task-input-row">
+              <input
+                type="text"
+                class="input"
+                id="taskInput"
+                placeholder="Ajouter une nouvelle tache..."
+                maxlength="150"
+                autocomplete="off"
+              >
+              <button type="submit" class="btn btn-primary">
+                <span>+</span> Ajouter
+              </button>
+            </div>
+          </form>
+
+          <!-- Task list -->
+          <div class="task-list" id="taskList"></div>
+        </section>
+
+        <!-- Status Section -->
+        <section class="status-section card animate-slide-up" style="animation-delay: 0.2s">
+          <div class="status-content" id="statusContent">
+            <!-- Filled by JS -->
+          </div>
+
+          <!-- Today's flower preview -->
+          <div class="today-flower-preview" id="todayFlowerPreview">
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flower animation overlay -->
+  <div id="flowerOverlay"></div>
+
+  <!-- Bouquet overlay -->
+  <div class="bouquet-overlay" id="bouquetOverlay" style="display:none">
+    <div class="bouquet-content">
+      <h2 class="bouquet-title">Ton bouquet de la semaine derniere</h2>
+      <div class="bouquet-flowers" id="bouquetFlowers"></div>
+      <div class="bouquet-stats" id="bouquetStats"></div>
+      <button class="btn btn-primary bouquet-close-btn" id="bouquetClose">Commencer la semaine</button>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="newtab.js"></script>
+</body>
+</html>

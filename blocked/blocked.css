@@ -1,0 +1,297 @@
+/* Blocked Page Styles */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.blocked-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Floating petals background */
+.floating-petals {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-petal {
+  position: absolute;
+  opacity: 0.3;
+  animation: petalFloat linear infinite;
+}
+
+@keyframes petalFloat {
+  0% {
+    transform: translateY(-10vh) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg) translateX(50px);
+    opacity: 0;
+  }
+}
+
+/* Main content */
+.blocked-content {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 40px 36px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 8px 40px var(--shadow);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.blocked-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.blocked-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.blocked-site {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.blocked-site strong {
+  color: var(--accent);
+}
+
+.blocked-message {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.blocked-message .highlight {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Mini garden in blocked page */
+.blocked-garden {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--garden-bg);
+  border-radius: 16px;
+  min-height: 80px;
+  align-items: flex-end;
+}
+
+/* Progress */
+.blocked-progress {
+  margin-bottom: 24px;
+}
+
+.blocked-progress .progress-bar-container {
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Timed access section */
+.timed-access-section {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.timed-access-btn {
+  font-size: 15px;
+  padding: 12px 28px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.timed-access-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: var(--accent-light);
+  border-radius: 12px;
+}
+
+.timer-icon {
+  font-size: 20px;
+}
+
+.timer-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.timed-access-expired {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 12px;
+}
+
+/* Quick add task */
+.blocked-add-task {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.blocked-add-task .input {
+  flex: 1;
+  font-size: 13px;
+  padding: 10px 14px;
+}
+
+.blocked-add-task .btn {
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+/* Actions */
+.blocked-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.blocked-actions .btn {
+  flex: 1;
+}
+
+/* Quote */
+.motivational-quote {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* === Mini garden (one column per day of the week) === */
+
+.blocked-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.blocked-day-spot {
+  width: 30px;
+  height: 30px;
+  border: 2px dashed var(--border);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.blocked-day-spot.future {
+  opacity: 0.2;
+}
+
+.blocked-day-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.blocked-day-label.today {
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 1;
+}
+
+.small-flower {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.small-flower.partial {
+  opacity: 0.7;
+}
+
+.small-flower-head {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-flower-petal {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform-origin: bottom center;
+}
+
+.small-flower.partial .small-flower-petal {
+  opacity: 0.7;
+}
+
+.small-flower-center {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.small-flower-stem {
+  width: 3px;
+  height: 20px;
+  background: #7bc77b;
+  border-radius: 2px;
+  margin: -2px auto 0;
+}
+
+.small-flower-stem.partial {
+  height: 15px;
+  opacity: 0.6;
+}

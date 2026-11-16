@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site bloque - Bloomie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/flowers.css">
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <div class="blocked-container">
+    <!-- Floating petals background -->
+    <div class="floating-petals" id="floatingPetals"></div>
+
+    <div class="blocked-content animate-scale-in">
+      <!-- Flower icon -->
+      <div class="blocked-icon">
+        <span>🌸</span>
+      </div>
+
+      <h1 class="blocked-title">Pas si vite !</h1>
+
+      <p class="blocked-site" id="blockedSite"></p>
+
+      <div class="blocked-message" id="blockedMessage">
+        <!-- Filled by JS -->
+      </div>
+
+      <!-- Mini garden -->
+      <div class="blocked-garden" id="blockedGarden"></div>
+
+      <!-- Task progress -->
+      <div class="blocked-progress">
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p class="progress-text" id="progressText"></p>
+      </div>
+
+      <!-- Quick add task -->
+      <form class="blocked-add-task" id="addTaskForm">
+        <input
+          type="text"
+          class="input"
+          id="taskInput"
+          placeholder="Ajouter une tache rapide..."
+          maxlength="150"
+          autocomplete="off"
+        >
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </form>
+
+      <!-- Action buttons -->
+      <div class="blocked-actions">
+        <button class="btn btn-primary" id="openTasks">
+          🌺 Voir mes taches
+        </button>
+        <button class="btn btn-secondary" id="goBack">
+          ← Retour
+        </button>
+      </div>
+
+      <!-- Motivational quote -->
+      <p class="motivational-quote" id="quote"></p>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="blocked.js"></script>
+</body>
+</html>

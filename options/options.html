@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Options - Bloomie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options-container">
+    <header class="options-header animate-fade-in">
+      <div class="header-left">
+        <span class="logo-icon">🌸</span>
+        <div>
+          <h1>Bloomie</h1>
+          <p class="subtitle">Paramètres</p>
+        </div>
+      </div>
+      <button class="btn btn-secondary" id="openNewTab">🌺 Mon jardin</button>
+    </header>
+
+    <!-- Theme Selection -->
+    <section class="options-section card animate-slide-up">
+      <h2 class="section-title">🎨 Thème de couleurs</h2>
+      <div class="theme-grid" id="themeGrid">
+        <button class="theme-option" data-theme="rose">
+          <div class="theme-preview rose-preview"></div>
+          <span>Rose</span>
+        </button>
+        <button class="theme-option" data-theme="lavender">
+          <div class="theme-preview lavender-preview"></div>
+          <span>Lavande</span>
+        </button>
+        <button class="theme-option" data-theme="mint">
+          <div class="theme-preview mint-preview"></div>
+          <span>Eucalyptus</span>
+        </button>
+        <button class="theme-option" data-theme="sky">
+          <div class="theme-preview sky-preview"></div>
+          <span>Myosotis</span>
+        </button>
+        <button class="theme-option" data-theme="peach">
+          <div class="theme-preview peach-preview"></div>
+          <span>Mimosa</span>
+        </button>
+        <button class="theme-option" data-theme="sunset">
+          <div class="theme-preview sunset-preview"></div>
+          <span>Capucine</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Blocked Sites -->
+    <section class="options-section card animate-slide-up" style="animation-delay: 0.1s">
+      <h2 class="section-title">🚫 Sites bloqués</h2>
+      <p class="section-desc">
+        Ces sites seront bloqués tant que toutes tes tâches du jour ne sont pas terminées.
+      </p>
+
+      <form class="add-site-form" id="addSiteForm">
+        <input
+          type="text"
+          class="input"
+          id="siteInput"
+          placeholder="Ex: instagram.com, youtube.com..."
+          autocomplete="off"
+        >
+        <button type="submit" class="btn btn-primary">Bloquer</button>
+      </form>
+
+      <!-- Quick add common sites -->
+      <div class="quick-sites" id="quickSites">
+        <span class="quick-label">Ajout rapide :</span>
+        <button class="quick-site-btn" data-site="instagram.com">Instagram</button>
+        <button class="quick-site-btn" data-site="youtube.com">YouTube</button>
+        <button class="quick-site-btn" data-site="twitter.com">Twitter/X</button>
+        <button class="quick-site-btn" data-site="tiktok.com">TikTok</button>
+        <button class="quick-site-btn" data-site="reddit.com">Reddit</button>
+        <button class="quick-site-btn" data-site="facebook.com">Facebook</button>
+        <button class="quick-site-btn" data-site="twitch.tv">Twitch</button>
+        <button class="quick-site-btn" data-site="netflix.com">Netflix</button>
+      </div>
+
+      <div class="site-list" id="siteList"></div>
+
+      <div class="empty-sites" id="emptySites">
+        <span class="empty-icon">🔓</span>
+        <p>Aucun site bloqué pour le moment</p>
+      </div>
+    </section>
+
+    <!-- Data Management -->
+    <section class="options-section card animate-slide-up" style="animation-delay: 0.2s">
+      <h2 class="section-title">📊 Données</h2>
+      <div class="data-actions">
+        <button class="btn btn-secondary" id="exportData">📤 Exporter</button>
+        <button class="btn btn-secondary danger-btn" id="resetData">🗑️ Réinitialiser</button>
+      </div>
+    </section>
+
+    <!-- Debug / Test Mode -->
+    <section class="options-section debug-section card animate-slide-up" style="animation-delay: 0.3s">
+      <div class="debug-header">
+        <h2 class="section-title debug-title">🛠 Mode Test</h2>
+        <label class="toggle-switch">
+          <input type="checkbox" id="debugToggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <p class="section-desc">
+        Simule une date pour tester les streaks, le reset quotidien et la conservation du jardin.
+      </p>
+
+      <div class="debug-controls" id="debugControls">
+        <!-- Current simulated date -->
+        <div class="debug-date-display">
+          <span class="debug-date-label">Date simulée :</span>
+          <span class="debug-date-value" id="debugDateDisplay">—</span>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="debug-actions">
+          <button class="btn debug-btn" id="debugPlusDay">+1 jour</button>
+          <button class="btn debug-btn" id="debugPlusWeek">+1 semaine</button>
+          <button class="btn debug-btn" id="debugResetDate">Aujourd'hui</button>
+        </div>
+
+        <!-- Date picker -->
+        <div class="debug-picker">
+          <label class="debug-picker-label">Choisir une date :</label>
+          <input type="date" class="input debug-date-input" id="debugDatePicker">
+        </div>
+
+        <!-- Simulate reset -->
+        <button class="btn debug-btn debug-btn-reset" id="debugMidnightReset">
+          🌙 Simuler le reset de minuit
+        </button>
+      </div>
+    </section>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

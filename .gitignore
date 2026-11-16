@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+
+# IDE / tooling
+.idea/
+.vscode/
+.claude/
+
+# Dependencies
+node_modules/
+
+# Build artifacts (Chrome Web Store packages)
+*.zip
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.crx

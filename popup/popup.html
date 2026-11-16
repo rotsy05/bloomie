@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/flowers.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container" id="app">
+    <!-- Header -->
+    <header class="popup-header">
+      <div class="popup-logo">
+        <span class="logo-icon">🌸</span>
+        <h1>Bloomie</h1>
+      </div>
+      <div class="popup-stats">
+        <span class="stat-badge" id="progress">0/0</span>
+      </div>
+    </header>
+
+    <!-- Progress bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Status message -->
+    <div class="status-message" id="statusMessage"></div>
+
+    <!-- Add task form -->
+    <form class="add-task-form" id="addTaskForm">
+      <div class="task-type-toggle" id="taskTypeToggle">
+        <button type="button" class="type-btn active" data-type="light">🌿 Legere</button>
+        <button type="button" class="type-btn" data-type="essential">🌸 Essentielle</button>
+      </div>
+      <div class="task-input-row">
+        <input
+          type="text"
+          class="input task-input"
+          id="taskInput"
+          placeholder="Ajouter une tache..."
+          maxlength="100"
+          autocomplete="off"
+        >
+        <button type="submit" class="btn btn-primary btn-icon add-btn">+</button>
+      </div>
+    </form>
+
+    <!-- Task list -->
+    <div class="task-list" id="taskList"></div>
+
+    <!-- Footer -->
+    <footer class="popup-footer">
+      <button class="btn btn-secondary btn-small" id="openNewTab">
+        🌺 Mon jardin
+      </button>
+      <button class="btn btn-secondary btn-small" id="openOptions">
+        ⚙️ Options
+      </button>
+    </footer>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

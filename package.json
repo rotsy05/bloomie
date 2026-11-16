@@ -1,0 +1,9 @@
+{
+  "name": "bloomie",
+  "version": "1.0.0",
+  "description": "Gamified to-do list Chrome extension that blocks distracting sites until your tasks are done.",
+  "private": true,
+  "scripts": {
+    "package": "zip -r bloomie-store.zip manifest.json background.js js css icons popup newtab options blocked"
+  }
+}
