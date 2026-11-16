@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="./jardin.png" width="85%" alt="Le jardin de la semaine et les tâches du jour" />
+  <img src="./screenshots/jardin.png" width="85%" alt="Le jardin de la semaine et les tâches du jour" />
 </p>
 
 ---
@@ -60,17 +60,17 @@ Une façon douce et motivante de rester concentré, sans culpabiliser.
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="./popup.png" alt="Fenêtre de l'extension" /><br />
+      <img src="./screenshots/popup.png" alt="Fenêtre de l'extension" /><br />
       <sub>La fenêtre de l'extension, accessible en un clic</sub>
     </td>
     <td width="50%" align="center">
-      <img src="./taches.png" alt="Tâches du jour et fleur qui grandit" /><br />
+      <img src="./screenshots/taches.png" alt="Tâches du jour et fleur qui grandit" /><br />
       <sub>Les tâches du jour et la fleur qui grandit (thème Lavande)</sub>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="./options.png" width="70%" alt="Thèmes de couleurs et sites bloqués" /><br />
+      <img src="./screenshots/options.png" width="70%" alt="Thèmes de couleurs et sites bloqués" /><br />
       <sub>Les options : thèmes de couleurs et sites bloqués</sub>
     </td>
   </tr>
