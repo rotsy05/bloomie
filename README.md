@@ -5,12 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://bloomie-one.vercel.app"><img src="https://img.shields.io/badge/Essayer_la_démo-F48FB1?style=for-the-badge" alt="Essayer la démo" /></a>
-  <img src="https://img.shields.io/badge/Extension-Chrome-FCE4EC?style=for-the-badge&logo=googlechrome&logoColor=C2185B" alt="Extension Chrome" />
+  <a href="https://chromewebstore.google.com/detail/bloomie/dkecjlhmghbhecajkjialbkoddfjbcfn"><img src="https://img.shields.io/badge/Ajouter_à_Chrome-F48FB1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Disponible sur le Chrome Web Store" /></a>
 </p>
 
 <p align="center">
-  <img src="./screenshots/jardin.png" width="85%" alt="Le jardin de la semaine et les tâches du jour" />
+  <img src="./jardin.png" width="85%" alt="Le jardin de la semaine et les tâches du jour" />
 </p>
 
 ---
@@ -61,17 +60,17 @@ Une façon douce et motivante de rester concentré, sans culpabiliser.
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="./screenshots/popup.png" alt="Fenêtre de l'extension" /><br />
+      <img src="./popup.png" alt="Fenêtre de l'extension" /><br />
       <sub>La fenêtre de l'extension, accessible en un clic</sub>
     </td>
     <td width="50%" align="center">
-      <img src="./screenshots/taches.png" alt="Tâches du jour et fleur qui grandit" /><br />
+      <img src="./taches.png" alt="Tâches du jour et fleur qui grandit" /><br />
       <sub>Les tâches du jour et la fleur qui grandit (thème Lavande)</sub>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="./screenshots/options.png" width="70%" alt="Thèmes de couleurs et sites bloqués" /><br />
+      <img src="./options.png" width="70%" alt="Thèmes de couleurs et sites bloqués" /><br />
       <sub>Les options : thèmes de couleurs et sites bloqués</sub>
     </td>
   </tr>
@@ -79,17 +78,11 @@ Une façon douce et motivante de rester concentré, sans culpabiliser.
 
 ---
 
-## Installation
+## Installer Bloomie
 
-**Démo en ligne :** [bloomie-one.vercel.app](https://bloomie-one.vercel.app)
-
-**Extension Chrome (en local) :**
-
-1. Téléchargez ce dépôt : bouton **Code → Download ZIP**, puis décompressez-le.
-2. Ouvrez `chrome://extensions` dans Chrome.
-3. Activez le **Mode développeur** (en haut à droite).
-4. Cliquez sur **Charger l'extension non empaquetée** et sélectionnez le dossier du projet.
-5. Épinglez Bloomie dans la barre d'outils et ajoutez votre première tâche.
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/bloomie/dkecjlhmghbhecajkjialbkoddfjbcfn"><img src="https://img.shields.io/badge/Disponible_sur_le_Chrome_Web_Store-F48FB1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Disponible sur le Chrome Web Store" /></a>
+</p>
 
 ---
 
